@@ -71,7 +71,7 @@ jobs:
           PYTHON_TEST_LOGFILE: critical.log
           RW_ENGINE_ENABLED: ON
     steps:
-    - uses: crashappsec/action-checkout@main
+    - uses: crashappsec/action-checkout@e9ff46a65f6403d9d88b87d248c3dfa41550ec75
       with:
         chalk: ${{ env.CHALK_ON }}
         profile: ${{ inputs.profile || 'curiosity-tests-racecar' }}
@@ -190,7 +190,7 @@ jobs:
         - TYPE: Release
           PYTHON_TEST_LOGFILE: critical.log
     steps:
-    - uses: crashappsec/action-checkout@main
+    - uses: crashappsec/action-checkout@e9ff46a65f6403d9d88b87d248c3dfa41550ec75
       with:
         chalk: ${{ env.CHALK_ON }}
         profile: ${{ inputs.profile || 'curiosity-tests-racecar' }}
