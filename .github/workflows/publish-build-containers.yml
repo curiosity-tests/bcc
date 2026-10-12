@@ -1,9 +1,8 @@
 name: Publish Build Containers
 
 on:
+  workflow_dispatch:
   # We want to update this image regularly and when updating master
-  schedule:
-    - cron: '00 18 * * *'
   push:
     branches:
       - master
